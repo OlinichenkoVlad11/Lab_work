@@ -3,7 +3,7 @@ package LAB3.task7;
 import java.util.Arrays;
 import java.util.Random;
 
-class SortingArray {
+class task7 {
     public static void main(String[] args) {
         int[] array = new int[10];
         Random random = new Random();

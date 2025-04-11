@@ -1,6 +1,6 @@
 package LAB3.task3;
 
-class Main {
+class task3 {
     public static void main(String[] args) {
 
         System.out.println("Таблиця множення для числа 7 (цикл for):");

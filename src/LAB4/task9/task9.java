@@ -1,6 +1,6 @@
 package LAB4.task9;
 
-class Main {
+class task9 {
     public static int sum(int... numbers) {
         int total = 0;
         for (int num : numbers) {

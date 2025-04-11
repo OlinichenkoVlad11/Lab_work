@@ -1,6 +1,6 @@
 package LAB4.task11;
 
-class Main {
+class task11 {
     public static int findMax(int... numbers) {
         if (numbers.length == 0) {
             throw new IllegalArgumentException("Масив не може бути порожнім");

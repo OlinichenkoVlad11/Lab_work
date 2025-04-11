@@ -1,6 +1,6 @@
 package LAB4.task2;
 
-class Main {
+class task2 {
     public static void sum(int a, int b) {
         System.out.println("Сума: " + (a + b));
     }

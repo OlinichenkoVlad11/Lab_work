@@ -3,7 +3,7 @@ package LAB3.task6;
 import java.util.Scanner;
 import java.util.Random;
 
-class Main {
+class task6 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введіть розмір масиву: ");

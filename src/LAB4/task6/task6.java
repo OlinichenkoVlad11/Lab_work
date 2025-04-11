@@ -1,6 +1,6 @@
 package LAB4.task6;
 
-class Main {
+class task6 {
 
     public static void printNumber() {
         int num = 10;

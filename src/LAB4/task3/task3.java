@@ -1,6 +1,6 @@
 package LAB4.task3;
 
-class Main {
+class task3 {
     public static int multiply(int a, int b) {
         return a * b;
     }

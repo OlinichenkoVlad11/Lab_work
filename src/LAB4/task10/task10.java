@@ -1,6 +1,6 @@
 package LAB4.task10;
 
-class Main {
+class task10 {
     public static void printNumbers(String message, int... numbers) {
         System.out.println(message);
         for (int num : numbers) {

@@ -2,7 +2,7 @@ package LAB3.task2;
 
 import java.util.Scanner;
 
-class Main {
+class task2 {
     public static void main(String[] args) {
         int secretNumber = 7;
         int userGuess;

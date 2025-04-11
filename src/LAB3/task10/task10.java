@@ -2,7 +2,7 @@ package LAB3.task10;
 
 import java.util.*;
 
-class ManualArrayInput {
+class task10 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

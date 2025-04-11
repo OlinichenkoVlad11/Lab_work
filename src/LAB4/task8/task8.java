@@ -1,6 +1,6 @@
 package LAB4.task8;
 
-class Main {
+class task8 {
     static int counter = 0;
 
     public static void setCounter(int counter) {

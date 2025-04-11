@@ -1,6 +1,6 @@
 package LAB4.task4;
 
-class Main {
+class task4 {
     public static void printInfo(String name) {
         System.out.println("Name: " + name);
     }
