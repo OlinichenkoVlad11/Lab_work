@@ -1,5 +1,8 @@
 package LAB11.task3.models;
 
+import LAB11.task3.enums.TaskStatus;
+import java.time.LocalDateTime;
+
 public abstract class BaseTask {
     protected int id;
     protected String title;
@@ -14,17 +17,23 @@ public abstract class BaseTask {
         this.createdAt = LocalDateTime.now();
         this.updatedAt = LocalDateTime.now();
     }
-    public void markAsDone() {
+
+    public String markAsDone() {
         this.status = TaskStatus.COMPLETED;
         this.updatedAt = LocalDateTime.now();
+        return null;
     }
+
     public int getId() {
         return id;
     }
+
     public String getTitle() {
         return title;
     }
+
     public TaskStatus getStatus() {
         return status;
     }
+}
 

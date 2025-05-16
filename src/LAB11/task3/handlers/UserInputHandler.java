@@ -11,11 +11,11 @@ public class UserInputHandler {
     public static int getIntInput(String message) {
         System.out.print(message);
         while (!scanner.hasNextInt()) {
-            System.out.println("❌ Invalid input. Please enter a number.");
+            System.out.println("❌ Невірний вхід. Будь ласка, введіть номер.");
             scanner.next();
         }
         int intInput = scanner.nextInt();
-        scanner.nextLine();  // Consume the newline after nextInt()        return intInput;
+        scanner.nextLine();  // Consume the newline after nextInt()
         return intInput;
     }
 

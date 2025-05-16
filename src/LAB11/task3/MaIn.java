@@ -14,7 +14,7 @@ public class MaIn {
             int choice = scanner.nextInt();
             scanner.nextLine();
             if (choice == 0) {
-                System.out.println("👋 Exiting To-Do List App. Have a great day!");
+                System.out.println("👋 Вихід зі списку справ. Гарного дня!");
                 break;
             }
             taskHandler.handleUserChoice(choice);
@@ -22,14 +22,14 @@ public class MaIn {
         }
     }
     private static void displayMenu() {
-        System.out.println("\nTo-Do List App");
-        System.out.println("1. Add Task");
-        System.out.println("2. Add Recurring Task");
-        System.out.println("3. Add High-Priority Task");
-        System.out.println("4. List Tasks");
-        System.out.println("5. Mark Task as Done");
-        System.out.println("6. Delete Task");
-        System.out.println("0. Exit");
-        System.out.print("Choose an option: ");
+        System.out.println("\nСписок справ");
+        System.out.println("1. Додати завдання");
+        System.out.println("2. Додати повторюване завдання");
+        System.out.println("3. Додати завдання з високим пріоритетом");
+        System.out.println("4. Список завдань");
+        System.out.println("5. Позначити завдання як виконане");
+        System.out.println("6. Видалити завдання");
+        System.out.println("0. Вихід ");
+        System.out.print("Виберіть опцію: ");
     }
 }
