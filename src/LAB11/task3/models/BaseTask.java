@@ -35,5 +35,11 @@ public abstract class BaseTask {
     public TaskStatus getStatus() {
         return status;
     }
+    @Override
+    public String toString() {
+        return "Task ID: " + id + ", Title: " + title + ", Status: " + status + ", Created At: " + createdAt + ", Updated At: " + updatedAt;
+    }
 }
+
+
 
