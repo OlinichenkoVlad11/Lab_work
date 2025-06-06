@@ -29,9 +29,10 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
         while (true) {
-            System.out.println("1. Позичити книжку");
-            System.out.println("2. Повернути книгу");
-            System.out.println("3. Вихід");
+            System.out.println("1. Список книг:");
+            System.out.println("2. Позичити книжку");
+            System.out.println("3. Повернути книгу");
+            System.out.println("4. Вихід");
             System.out.print("Вибери операцію: ");
             int choice = sc.nextInt();
             sc.nextLine(); // очистити буфер

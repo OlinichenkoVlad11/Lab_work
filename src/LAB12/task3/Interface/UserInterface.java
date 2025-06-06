@@ -1,5 +1,6 @@
 package LAB12.task3.Interface;
 
+import LAB12.task3.DescendantClasses.Book;
 import LAB12.task3.Users.User;
 import LAB12.task3.list.Library;
 
@@ -17,12 +18,31 @@ public class UserInterface {
 
     public void handleChoice(int choice) {
         switch (choice) {
-            case 1 -> borrowBook();
-            case 2 -> returnBook();
-            case 3 -> exitApp();
+            case 1 -> Listofbooks();
+            case 2 -> borrowBook();
+            case 3 -> returnBook();
+            case 4 -> exitApp();
             default -> System.out.println("Невірний вибір.");
         }
     }
+    public void Listofbooks() {
+        var allItems = library.getItems(); // Всі предмети
+        boolean hasBooks = false;
+
+        System.out.println("Список книг у бібліотеці:");
+        for (int i = 0; i < allItems.size(); i++) {
+            var item = allItems.get(i);
+            if (item instanceof Book) {
+                hasBooks = true;
+                System.out.println((i + 1) + ". " + item.getInfo());
+            }
+        }
+
+        if (!hasBooks) {
+            System.out.println("Книги не знайдено.");
+        }
+    }
+
 
     public void borrowBook() {
         System.out.print("Введи ключове слово для пошуку: ");
