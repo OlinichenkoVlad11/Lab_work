@@ -29,11 +29,13 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
         while (true) {
-            System.out.println("1. Список книг:");
-            System.out.println("2. Позичити книжку");
-            System.out.println("3. Повернути книгу");
-            System.out.println("4. Вихід");
-            System.out.print("Вибери операцію: ");
+            System.out.println("---------------------------- ");
+            System.out.println("1. Список книг📚:");
+            System.out.println("2. Позичити книжку📖");
+            System.out.println("3. Повернути книгу🔄📖");
+            System.out.println("4. Вихід🔚");
+            System.out.println("👉Вибери операцію👈 ");
+            System.out.println("---------------------------- ");
             int choice = sc.nextInt();
             sc.nextLine(); // очистити буфер
             ui.handleChoice(choice);

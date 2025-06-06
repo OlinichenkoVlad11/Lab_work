@@ -22,14 +22,14 @@ public class UserInterface {
             case 2 -> borrowBook();
             case 3 -> returnBook();
             case 4 -> exitApp();
-            default -> System.out.println("Невірний вибір.");
+            default -> System.out.println("Невірний вибір❌.");
         }
     }
     public void Listofbooks() {
         var allItems = library.getItems(); // Всі предмети
         boolean hasBooks = false;
 
-        System.out.println("Список книг у бібліотеці:");
+        System.out.println("Список книг у бібліотеці📖:");
         for (int i = 0; i < allItems.size(); i++) {
             var item = allItems.get(i);
             if (item instanceof Book) {
@@ -39,13 +39,13 @@ public class UserInterface {
         }
 
         if (!hasBooks) {
-            System.out.println("Книги не знайдено.");
+            System.out.println("Книги не знайдено🤷‍♂️.");
         }
     }
 
 
     public void borrowBook() {
-        System.out.print("Введи ключове слово для пошуку: ");
+        System.out.print("🔎Введи ключове слово для пошуку: ");
         String keyword = scanner.nextLine();
         var results = library.searchByTitle(keyword);
         if (results.isEmpty()) {
