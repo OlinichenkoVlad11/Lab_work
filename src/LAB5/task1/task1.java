@@ -5,7 +5,6 @@ import java.util.Scanner;
 class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         double principal, monthlyDeposit, annualRate;
         int years, timesCompounded;
 
@@ -20,17 +19,15 @@ class Main {
         System.out.print("Введіть кількість нарахувань відсотків на рік: ");
         timesCompounded = scanner.nextInt();
 
-        double rate = annualRate / 100;
-        double totalAmount = principal * Math.pow(1 + (rate / timesCompounded), timesCompounded * years);
+        double r = annualRate / 100;
+        double amount = principal * Math.pow(1 + r / timesCompounded, timesCompounded * years);
+        double monthlyRate = r / timesCompounded;
+        double months = years * 12;
+        double compoundedDeposits = monthlyDeposit * ((Math.pow(1 + r / timesCompounded, timesCompounded * years) - 1) / (r / timesCompounded));
 
-        for (int i = 0; i < years * 12; i++) {
-            totalAmount += monthlyDeposit * Math.pow(1 + (rate / timesCompounded), timesCompounded * ((years * 12 - i) / 12.0));
-        }
+        double totalAmount = amount + compoundedDeposits;
 
-        // 6. Виведення результату у форматі з двома знаками після коми
-        System.out.printf("Через %d років ви отримаєте: $%.2f%n", years, totalAmount);
-
-        // 7. Закриття Scanner
+        System.out.printf("Через %d років ви отримаєте: $%.2f%n\n", years, amount);
         scanner.close();
     }
 }
